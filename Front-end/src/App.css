@@ -1,0 +1,48 @@
+.app {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+  position: relative;
+  background-color: #FDF6EC;
+  height: 100%;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  /* margin: 0; */
+}
+
+* {
+  color: #333333;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Sans-Serif';
+  src: url('/Font/Krub-Light.ttf');
+}
+@font-face {
+  font-family: 'Sans-Serif Bold';
+  src: url('/Font/Krub-Bold.ttf');
+}
+@font-face {
+  font-family: 'Sans-Serif Medium';
+  src: url('/Font/Krub-Medium.ttf');
+}
+@font-face {
+  font-family: 'Serif';
+  src: url('/Font/JosefinSlab-Regular.ttf');
+}
