@@ -55,6 +55,7 @@ p {
   font-family: 'Serif';
   color: ${props => props.theme.primary};
   margin: 0 0 0 4vh;
+  font-size: 1.1em;
 }
 `;
 

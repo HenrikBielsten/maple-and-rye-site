@@ -29,6 +29,7 @@ padding: 0 5% 0 5%;
 
 p {
   font-family: 'Sans-Serif';
+  font-size: 1em;
 }
 `;
 

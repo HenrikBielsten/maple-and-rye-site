@@ -41,7 +41,7 @@ padding: 4%;
 p {
   margin: 0;
   font-family: 'Serif';
-  font-size: 1em;
+  font-size: 1.1em;
 }
 `;
 
