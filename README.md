@@ -5,7 +5,7 @@ A website made for the band Maple &amp; Rye
 <img src="https://media.giphy.com/media/oLWu0pow3xHry/giphy.gif" alt="02 - Logic & Presentation" width="100%">
 </p>
 
-This is a simple website made for the band Maple &amp; Rye. It started development as the graduation thesis work of student Henrik Bielsten at Yrgo, Gothenburg. Currently it is a work in progress.
+This is a simple website made for the band Maple &amp; Rye. It started as the major degree project of student Henrik Bielsten at Yrgo, Gothenburg. The focus was to learn more about [React.js](https://github.com/facebook/react) and using [Wordpress](https://github.com/WordPress/WordPress) as a headless API. Currently it is a work in progress.
 
 Developed with:
 - [React.js](https://github.com/facebook/react)
