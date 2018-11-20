@@ -21,14 +21,15 @@ width: 100%;
 height: 90vh;
 background-color: ${props => props.theme.softBlack};
 position: fixed;
-right: ${props => props.modalOpen ? '0%' : '-100%'};
+right: 0px;
 z-index: 200;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
-transition: opacity .2s linear;
-opacity: ${props => props.modalOpen ? '.8' : '0'};;
+opacity: ${props => props.modalOpen ? '.8' : '0'};
+pointer-events: ${props => props.modalOpen ? 'auto' : 'none'};
+transition: all .2s linear;
 `;
 
 const StyledModal = styled.div`
@@ -44,12 +45,10 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-transition: right .2s ease-out;
-border-radius: 10px;
+border-radius: 4px;
 overflow: hidden;
-`;
-
-const StyledClose = styled.div`
+box-shadow: 2px 2px 8px ${props => props.theme.shadowDark};
+transition: all .2s ease-out;
 `;
 
 class Modal extends Component {
@@ -59,14 +58,14 @@ class Modal extends Component {
       <StyledWrapper>
         <StyledOverlay
           modalOpen={this.props.modalOpen}
-          onClick={this.props.lyricsHandler}
+          onClick={this.props.lyricsClose}
           >
         </StyledOverlay>
         <StyledModal
           modalOpen={this.props.modalOpen}
           >
-            <StyledClose
-              onClick={this.props.lyricsHandler}
+            <div
+              onClick={this.props.lyricsClose}
               >
               <Cross
                 height="5vw"
@@ -76,8 +75,8 @@ class Modal extends Component {
                 top="2%"
                 right="3%"
                 >
-                </Cross>
-            </StyledClose>
+              </Cross>
+            </div>
             {this.props.children}
         </StyledModal>
       </StyledWrapper>

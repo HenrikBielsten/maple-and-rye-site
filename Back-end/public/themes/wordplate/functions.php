@@ -77,6 +77,12 @@ add_theme_support('plate-disable-menu', [
     'tools.php?page=wp-migrate-db', // Plugin in Tools
     'options-general.php?page=menu_editor', // Plugin in Settings
     'admin.php?page=theseoframework-settings', // Plugin in menu root
+    'edit.php', // Posts
+    'edit.php?post_type=page', // Pages
+    'themes.php', // Appearance
+    'tools.php', // Tools
+    'options-general.php', // Settings
+    'users.php', // Users
 ]);
 
 add_theme_support('plate-disable-dashboard', [
@@ -103,4 +109,4 @@ add_theme_support('plate-disable-toolbar', [
    'search',
 ]);
 
-add_theme_support('plate-footer-text', 'Thank you for your co-operation');
+add_theme_support('plate-footer-text', 'Good luck on all your endeavors Maple & Rye');

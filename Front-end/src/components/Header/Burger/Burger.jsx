@@ -23,14 +23,15 @@ height: 90vh;
 background-color: ${props => props.theme.softBlack};
 position: fixed;
 top: 10vh;
-right: ${props => props.open ? '0%' : '-100%'};
+right: 0px;
 z-index: 300;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
-transition: opacity .2s linear;
-opacity: ${props => props.open ? '.8' : '0'};;
+transition: all .2s linear;
+opacity: ${props => props.open ? '.8' : '0'};
+pointer-events: ${props => props.open ? 'auto' : 'none'}
 `;
 
 const StyledBurger = styled.div`

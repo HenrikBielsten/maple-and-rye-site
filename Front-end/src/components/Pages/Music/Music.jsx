@@ -224,6 +224,12 @@ class Music extends Component {
     })
   }
 
+  lyricsClose = () => {
+    this.setState({
+      modalOpen: !this.state.modalOpen,
+    })
+  }
+
   render() {
     const { releases, error } = this.state;
 
@@ -345,7 +351,7 @@ class Music extends Component {
 
         <Modal
           modalOpen={this.state.modalOpen}
-          lyricsHandler={this.lyricsHandler}
+          lyricsClose={this.lyricsClose}
           >
           <Lyrics
             songTitle={this.state.songTitle}

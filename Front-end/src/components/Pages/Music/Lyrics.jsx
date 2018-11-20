@@ -8,6 +8,7 @@ import Apple from '../../SVG/Apple';
 const StyledWrapper = styled.div`
 width: 100%;
 height: 100%;
+// background-color: white;
 `;
 
 const StyledSongTitle = styled.div`
