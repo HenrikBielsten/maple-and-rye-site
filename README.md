@@ -8,12 +8,12 @@ A website made for the band Maple &amp; Rye
 This is a simple website made for the band Maple &amp; Rye. It started development as the graduation thesis work of student Henrik Bielsten at Yrgo, Gothenburg. Currently it is a work in progress.
 
 Developed with:
-[React.js](https://github.com/facebook/react)
-[Styled-Components](https://github.com/styled-components/styled-components)
-[Reach Router](https://github.com/reach/router)
-[React Helmet](https://github.com/nfl/react-helmet)
-[Wordpress](https://github.com/WordPress/WordPress)
-[Wordplate](https://github.com/wordplate/plate#readme)
+- [React.js](https://github.com/facebook/react)
+- [Styled-Components](https://github.com/styled-components/styled-components)
+- [Reach Router](https://github.com/reach/router)
+- [React Helmet](https://github.com/nfl/react-helmet)
+- [Wordpress](https://github.com/WordPress/WordPress)
+- [Wordplate](https://github.com/wordplate/plate#readme)
 
 
 ### Setup
