@@ -34,11 +34,6 @@ add_action( 'rest_api_init', function () {
         'callback' => 'getAllVideo'
     ]);
 
-    register_rest_route( 'mapleandrye/v1', '/gallery/', [
-        'methods' => 'GET',
-        'callback' => 'getAllGalleries'
-    ]);
-
     register_rest_route( 'mapleandrye/v1', '/about/', [
         'methods' => 'GET',
         'callback' => 'getAbout'
@@ -52,16 +47,6 @@ add_action( 'rest_api_init', function () {
     register_rest_route( 'mapleandrye/v1', '/contact/', [
         'methods' => 'GET',
         'callback' => 'getContact'
-    ]);
-
-    register_rest_route('mapleandrye/v1', '/ideologies/', [
-        'methods' => 'GET',
-        'callback' => 'getIdeologies'
-    ]);
-
-    register_rest_route('mapleandrye/v1', '/mainMenu/', [
-        'methods' => 'GET',
-        'callback' => 'getMainMenu'
     ]);
 });
 
@@ -180,23 +165,6 @@ function getAllVideo() {
     return $videos;
 }
 
-function getAllGalleries() {
-    $galleries = get_posts([
-        'post_type' => 'galleries',
-        'numberposts' => -1,
-    ]);
-
-    foreach ($galleries as &$gallery) {
-        $customFields = get_fields($gallery);
-
-        foreach ($customFields as $field => $value) {
-            $gallery->$field = $value;
-        }
-    }
-
-    return $galleries;
-}
-
 function getAbout() {
     $abouts = get_posts([
         'post_type' => 'about',
@@ -241,16 +209,4 @@ function getContact() {
     }
 
     return $contacts;
-}
-
-function getIdeologies($data) {
-    $ideologies = get_terms('ideology');
-
-    return $ideologies;
-}
-
-function getMainMenu($data) {
-    $mainMenu = wp_get_nav_menu_items('Main Menu');
-
-    return $mainMenu;
 }

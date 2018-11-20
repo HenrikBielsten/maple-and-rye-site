@@ -17,13 +17,9 @@ require template_path('./post-types/tracks.php');
 
 require template_path('./post-types/videos.php');
 
-require template_path('./post-types/lyrics.php');
-
 require template_path('./post-types/about.php');
 
 require template_path('./post-types/contact.php');
-
-require template_path('./post-types/galleries.php');
 
 require template_path('./endpoints/custom-endpoints.php');
 
