@@ -191,6 +191,7 @@ class Music extends Component {
     modalOpen: false,
     songTitle: false,
     lyric: false,
+    imageIsClicked: false,
   };
 
   componentDidMount() {
@@ -230,8 +231,17 @@ class Music extends Component {
     })
   }
 
+  clickImage = () => {
+    console.log('clicked');
+    this.setState({
+      imageIsClicked: true,
+    })
+  }
+
   render() {
     const { releases, error } = this.state;
+
+    console.log(this.state.imageIsClicked);
 
     return (
       <PageContainer
@@ -260,7 +270,7 @@ class Music extends Component {
 
                   <StyledReleaseWrapper key={release.ID}>
 
-                    <StyledAlbumContainter>
+                    <StyledAlbumContainter onClick={this.clickImage}>
                       <StyledAlbumContent>
 
                         <StyledAlbumTitle>
@@ -328,6 +338,8 @@ class Music extends Component {
                         slideImage={this.state.slideImage}
                         src={release.cover_image.sizes.medium_large}
                         width={'100%'}
+
+                        imageIsClicked={this.state.imageIsClicked}
                         >
                       </AlbumCover>
                     </StyledAlbumContainter>
