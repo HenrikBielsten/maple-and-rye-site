@@ -232,7 +232,6 @@ class Music extends Component {
   }
 
   clickImage = () => {
-    console.log('clicked');
     this.setState({
       imageIsClicked: true,
     })
@@ -240,8 +239,6 @@ class Music extends Component {
 
   render() {
     const { releases, error } = this.state;
-
-    console.log(this.state.imageIsClicked);
 
     return (
       <PageContainer

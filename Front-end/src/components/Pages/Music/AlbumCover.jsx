@@ -10,7 +10,7 @@ box-shadow: 2px 2px 10px ${props => props.theme.shadow};
 position: relative;
 left: ${props => props.slideImage ? '-100%' : '0%'};
 transition: all .2s ease-out;
-animation: ${props => props.imageIsClicked ? '' : 'imageAttention .5s ease-in-out 13s 2 normal'};
+animation: ${props => props.imageIsClicked ? '' : 'imageAttention .5s ease-in-out 8s 2 normal'};
 
 @keyframes imageAttention {
   0% {
@@ -42,7 +42,7 @@ transform: rotate(${props => props.slideImage ? '180deg' : '0deg'});
 box-shadow: ${props => props.slideImage ? '0px -2px 5px' : '0px 2px 5px'} ${props => props.theme.shadowDark};
 pointer-events: none;
 transition: all .2s ease-out;
-animation: ${props => props.imageIsClicked ? '' : 'attention .7s ease-in-out 5s 2 normal, attention2 .5s ease-in-out 13s 2 normal'};
+animation: ${props => props.imageIsClicked ? '' : 'attention .7s ease-in-out 2s 2 normal, attention2 .5s ease-in-out 8s 2 normal'};
 
 @keyframes attention {
   0% {
