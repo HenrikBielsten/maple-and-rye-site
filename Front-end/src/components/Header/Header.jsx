@@ -55,7 +55,7 @@ class Header extends Component {
     return (
       <StyledHeader>
         <LogoText
-          width={"30vw"}
+          width={"38vw"}
           color={this.props.theme.primary}
           >
         </LogoText>

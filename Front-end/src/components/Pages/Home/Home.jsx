@@ -9,7 +9,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 // My component imports
 import PageContainer from '../PageComponents/PageContainer';
-import LogoText from "../../SVG/LogoText";
 import Button from "../PageComponents/Buttons/Button";
 import Headline from "../PageComponents/Headline";
 
@@ -148,7 +147,7 @@ class Home extends Component {
                     gallery.images.map(
                       image =>
                       image.title && (
-                        <div style={{height: '43vh'}}>
+                        <div style={{height: '38vh'}}>
                           <img style={{width: '100%', height: '100%'}} src={image.sizes.medium_large} alt={image.alt}/>
                         </div>
 
@@ -161,12 +160,6 @@ class Home extends Component {
             )}
           </Carousel>
 
-          <LogoText
-            width="60vw"
-            color={this.props.theme.primary}
-            position="absolute"
-            >
-          </LogoText>
         </StyledHero>
 
         <Headline>NEWS</Headline>
@@ -190,8 +183,8 @@ class Home extends Component {
                     <Button
                       color={this.props.theme.softBlack}
                       backgroundColor={this.props.theme.primary}
-                      width="30vw"
-                      height="8vw"
+                      width="40vw"
+                      height="10vw"
                       borderColor={this.props.theme.softBlack}
                       >
                       {news_item.button_text.toUpperCase()}
